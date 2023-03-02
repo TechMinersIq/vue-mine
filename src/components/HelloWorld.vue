@@ -10,13 +10,10 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-
-// Logo
 import logo from "../assets/logo.svg";
 
 export default defineComponent({
   name: "HelloWorld",
-
   data() {
     return {
       ecosystem: [
