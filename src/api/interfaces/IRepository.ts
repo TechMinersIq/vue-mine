@@ -1,0 +1,3 @@
+interface IRepository {
+  controllerName: string;
+}
