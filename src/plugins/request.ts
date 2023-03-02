@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "https://jsonplaceholder.typicode.com/",
+  baseURL: import.meta.env.VITE_API_BASE_URL,
   headers: {
     "Content-type": "application/json",
   },
