@@ -1,4 +1,4 @@
-import request from "@/plugins/request";
+import request from "@/api/request";
 
 const controllerName: string = "todos";
 
