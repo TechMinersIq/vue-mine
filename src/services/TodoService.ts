@@ -1,18 +1,20 @@
-import axios from "@/plugins/axios";
+import request from "@/plugins/request";
+
+const controllerName: string = "todos";
 
 class TodoService {
   async getAll() {
-    const res = await axios.get("todos");
+    const res = await request.get(controllerName);
     return res.data as Todo[];
   }
 
   async get(id: string) {
-    const res = await axios.get(`todos/${id}`);
+    const res = await request.get(`${controllerName}/${id}`);
     return res.data as Todo;
   }
 
   async findByTitle(title: string) {
-    const response = await axios.get("todos");
+    const response = await request.get(`${controllerName}`);
     const todos: Todo[] = response.data;
     return todos.filter((todo) => todo.title.includes(title));
   }
