@@ -1,6 +1,7 @@
 {
   "extends": "@vue/tsconfig/tsconfig.web.json",
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "resolveJsonModule": true,
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
