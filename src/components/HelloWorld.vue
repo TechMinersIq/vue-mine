@@ -1,11 +1,16 @@
 <template>
-  <v-container fluid>
-    <v-row class="text-center">
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          {{ $t("systemMeta.title") }}
-        </h1>
-      </v-col>
-    </v-row>
-  </v-container>
+  <div class="home">
+    <h1>{{ $t("systemMeta.title") }}</h1>
+  </div>
 </template>
+
+<style>
+@media (min-width: 1024px) {
+  .home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+</style>
