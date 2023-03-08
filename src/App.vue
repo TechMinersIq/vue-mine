@@ -13,20 +13,19 @@
       </q-toolbar>
     </q-header>
 
-    <!-- <q-drawer show-if-above v-model="leftDrawerOpen" side="left">
-    </q-drawer> -->
-    <!-- <q-drawer
-      v-model="drawer"
+    <q-drawer
+      v-model="leftDrawerOpen"
       show-if-above
-      :mini="miniState"
-      @mouseover="miniState = false"
-      @mouseout="miniState = true"
       :width="200"
-      :breakpoint="500"
-      bordered
-      class="bg-grey-3"
+      :breakpoint="400"
     >
-      <q-scroll-area class="fit" :horizontal-thumb-style="{ opacity: 0 }">
+      <q-scroll-area
+        style="
+          height: calc(100% - 150px);
+          margin-top: 150px;
+          border-right: 1px solid #ddd;
+        "
+      >
         <q-list padding>
           <q-item clickable v-ripple>
             <q-item-section avatar>
@@ -52,8 +51,6 @@
             <q-item-section> Send </q-item-section>
           </q-item>
 
-          <q-separator />
-
           <q-item clickable v-ripple>
             <q-item-section avatar>
               <q-icon name="drafts" />
@@ -63,7 +60,21 @@
           </q-item>
         </q-list>
       </q-scroll-area>
-    </q-drawer> -->
+
+      <q-img
+        class="absolute-top"
+        src="https://cdn.quasar.dev/img/material.png"
+        style="height: 150px"
+      >
+        <div class="absolute-bottom bg-transparent">
+          <q-avatar size="56px" class="q-mb-sm">
+            <img src="https://cdn.quasar.dev/img/boy-avatar.png" />
+          </q-avatar>
+          <div class="text-weight-bold">Razvan Stoenescu</div>
+          <div>@rstoenescu</div>
+        </div>
+      </q-img>
+    </q-drawer>
 
     <q-page-container>
       <router-view />
@@ -85,11 +96,9 @@ import { ref } from "vue";
 export default {
   setup() {
     const leftDrawerOpen = ref(false);
-    const drawer = ref(true);
 
     return {
       leftDrawerOpen,
-      drawer,
       toggleLeftDrawer() {
         leftDrawerOpen.value = !leftDrawerOpen.value;
       },
