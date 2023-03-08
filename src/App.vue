@@ -13,12 +13,7 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      :width="200"
-      :breakpoint="400"
-    >
+    <q-drawer v-model="drawer" show-if-above :width="200" :breakpoint="400">
       <q-scroll-area
         style="
           height: calc(100% - 150px);
@@ -35,7 +30,7 @@
             <q-item-section> Inbox </q-item-section>
           </q-item>
 
-          <q-item active clickable v-ripple>
+          <q-item clickable v-ripple>
             <q-item-section avatar>
               <q-icon name="star" />
             </q-item-section>
@@ -68,10 +63,17 @@
       >
         <div class="absolute-bottom bg-transparent">
           <q-avatar size="56px" class="q-mb-sm">
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png" />
+            <img src="https://avatars.githubusercontent.com/u/38330943?v=4" />
           </q-avatar>
-          <div class="text-weight-bold">Razvan Stoenescu</div>
-          <div>@rstoenescu</div>
+          <div class="text-weight-bold">Zaid Kindman</div>
+          <div>
+            <a
+              style="text-decoration: none; text-decoration-line: none"
+              target="_blank"
+              href="https://twitter.com/zaidkindman"
+              >@zaidkindman</a
+            >
+          </div>
         </div>
       </q-img>
     </q-drawer>
@@ -83,26 +85,19 @@
     <q-footer class="bg-grey-8 text-white">
       <q-toolbar>
         <q-toolbar-title>
-          <div>2032</div>
+          <div>2023</div>
         </q-toolbar-title>
       </q-toolbar>
     </q-footer>
   </q-layout>
 </template>
 
-<script>
+<script setup lang="ts">
 import { ref } from "vue";
 
-export default {
-  setup() {
-    const leftDrawerOpen = ref(false);
+const drawer = ref(false);
 
-    return {
-      leftDrawerOpen,
-      toggleLeftDrawer() {
-        leftDrawerOpen.value = !leftDrawerOpen.value;
-      },
-    };
-  },
+const toggleLeftDrawer = () => {
+  drawer.value = !drawer.value;
 };
 </script>
