@@ -76,17 +76,11 @@
   </q-layout>
 </template>
 
-<script lang="ts">
-export default {
-  data() {
-    return {
-      drawer: false,
-    };
-  },
-  methods: {
-    toggleLeftDrawer() {
-      this.drawer = !this.drawer;
-    },
-  },
+<script setup lang="ts">
+import { ref } from "vue";
+
+const drawer = ref(false);
+const toggleLeftDrawer = () => {
+  drawer.value = !drawer.value;
 };
 </script>
