@@ -1,5 +1,9 @@
 {
-    "systemMeta": {
-        "title": "عنوان المشروع"
+    "system": {
+        "title": "نموذج فيو"
+    },
+    "drawer": {
+        "home": "الرئيسية",
+        "about": "حول"
     }
 }

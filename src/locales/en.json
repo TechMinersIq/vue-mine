@@ -1,5 +1,9 @@
 {
-    "systemMeta": {
-        "title": "Project title"
+    "system": {
+        "title": "Vue template"
+    },
+    "drawer": {
+        "home": "Home",
+        "about": "About"
     }
 }
