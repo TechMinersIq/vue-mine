@@ -52,6 +52,7 @@
 
 <script>
 export default {
+  created() {},
   data: () => ({
     links: ["Dashboard", "About", "Profile", "Updates"],
   }),
