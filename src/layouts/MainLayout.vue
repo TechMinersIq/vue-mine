@@ -50,11 +50,7 @@
   </v-app>
 </template>
 
-<script>
-export default {
-  created() {},
-  data: () => ({
-    links: ["Dashboard", "About", "Profile", "Updates"],
-  }),
-};
+<script setup lang="ts">
+import { ref } from "vue";
+const links = ref(["Dashboard", "About", "Profile", "Updates"]);
 </script>
