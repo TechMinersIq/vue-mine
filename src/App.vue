@@ -1,7 +1,6 @@
 <template>
-  <v-app>
-    <v-main>
-      <router-view />
-    </v-main>
-  </v-app>
+  <MainLayout />
 </template>
+<script setup>
+import MainLayout from "@/layouts/MainLayout.vue";
+</script>
