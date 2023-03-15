@@ -16,6 +16,13 @@
 
         <v-list-item prepend-icon="mdi-forum" value="messages"></v-list-item>
       </v-list>
+      <template v-slot:append>
+        <div class="pa-2">
+          <v-btn block variant="icon"
+            ><v-icon color="red">mdi-logout</v-icon>
+          </v-btn>
+        </div>
+      </template>
     </v-navigation-drawer>
 
     <v-navigation-drawer class="bg-deep-purple" theme="dark" v-model="drawer">
@@ -36,12 +43,6 @@
           value="users"
         ></v-list-item>
       </v-list>
-
-      <template v-slot:append>
-        <div class="pa-2">
-          <v-btn block variant="text"> Logout </v-btn>
-        </div>
-      </template>
     </v-navigation-drawer>
 
     <v-app-bar flat>
