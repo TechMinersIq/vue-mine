@@ -2,9 +2,7 @@
   <v-container fluid>
     <v-card>
       <v-card-title>
-        <v-toolbar>
-          <h1 class="pa-5">{{ $t("system.title") }}</h1>
-        </v-toolbar>
+        <h1>{{ $t("system.title") }}</h1>
       </v-card-title>
       <v-card-text>
         <p>
