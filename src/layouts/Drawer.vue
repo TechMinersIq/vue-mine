@@ -24,7 +24,7 @@
     </template>
   </v-navigation-drawer>
 
-  <v-navigation-drawer
+  <!-- <v-navigation-drawer
     class="bg-deep-purple"
     theme="dark"
     v-model="props.drawer"
@@ -46,7 +46,7 @@
         value="users"
       ></v-list-item>
     </v-list>
-  </v-navigation-drawer>
+  </v-navigation-drawer> -->
 </template>
 <script setup lang="ts">
 const props = defineProps({
