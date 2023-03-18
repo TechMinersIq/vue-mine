@@ -5,5 +5,8 @@
     "drawer": {
         "home": "الرئيسية",
         "about": "حول"
+    },
+    "appBar": {
+        "language": "اللغة"
     }
 }

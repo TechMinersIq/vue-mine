@@ -5,5 +5,8 @@
     "drawer": {
         "home": "Home",
         "about": "About"
+    },
+    "appBar": {
+        "language": "Language"
     }
 }
