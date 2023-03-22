@@ -11,11 +11,19 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useLocale } from "vuetify";
+import { setLocale, getLocale } from "@/data/SystemLocalStorage";
 
 const { current } = useLocale();
+const currentLocale: string | null = getLocale();
 
-const locale = ref("en");
+const locale = ref("");
+
+if (currentLocale) locale.value = currentLocale;
+else locale.value = "ar";
+
 const changeLocale = (value: string) => {
+  setLocale(value);
   current.value = value;
+  locale.value = value;
 };
 </script>

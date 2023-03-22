@@ -5,10 +5,14 @@
 </template>
 <script setup lang="ts">
 import { useTheme } from "vuetify";
+import { setTheme } from "@/data/SystemLocalStorage";
 
 const theme = useTheme();
-const toggleTheme = () =>
-  (theme.global.name.value = theme.global.current.value.dark
+const toggleTheme = () => {
+  const themeInverse: string = theme.global.current.value.dark
     ? "light"
-    : "dark");
+    : "dark";
+  theme.global.name.value = themeInverse;
+  setTheme(themeInverse);
+};
 </script>
