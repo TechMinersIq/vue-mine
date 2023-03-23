@@ -36,5 +36,4 @@ VUE MINE is a simple vue project template.
 
 ## Contributing
 
-Contributions are always welcome! it would be very helpful 😊
-
+😊 Contributions are always welcome! it would be very helpful 
