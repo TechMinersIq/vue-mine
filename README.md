@@ -6,6 +6,7 @@ VUE MINE is a simple vue project template.
 
 ## Tech Stack
 
+* node v18.13.0
 * vue v3.2.47
 * vuetify v3.0.0-beta.0
 * pinia v2.0.32
