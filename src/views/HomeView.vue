@@ -1,20 +1,20 @@
 <template>
-  <v-container fluid>
-    <v-card>
-      <v-card-title>
-        <h1>{{ $t("system.title") }}</h1>
-      </v-card-title>
-      <v-card-text>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-          reprehenderit incidunt quis voluptates esse deserunt, iure pariatur
-          cum sed fuga quas ducimus corporis ullam nostrum sequi asperiores
-          tempora? Suscipit, quia? Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Cupiditate cum quibusdam, quisquam incidunt
-          accusantium ut maiores impedit architecto deleniti, fugiat voluptatum
-          animi perferendis nulla, quia quod ab eaque provident iusto.
-        </p>
-      </v-card-text>
-    </v-card>
-  </v-container>
+  <v-card rounded>
+    <v-toolbar class="pa-1" color="primary">
+      <v-card-title
+        ><h1>{{ $t("system.title") }}</h1></v-card-title
+      >
+    </v-toolbar>
+    <v-card-text>
+      <p>
+        Quisquam, doloremque! Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Omnis ipsam voluptatem ipsa non! Corrupti doloremque
+        maxime praesentium beatae, perferendis dignissimos? Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Rerum asperiores non similique
+        odio laboriosam quas porro quo ut illum consectetur perferendis expedita
+        nisi, commodi repellendus veniam, labore quis ipsam minus, optio ratione
+        qui dolorum fuga. Voluptate, ipsam doloribus!
+      </p>
+    </v-card-text>
+  </v-card>
 </template>
