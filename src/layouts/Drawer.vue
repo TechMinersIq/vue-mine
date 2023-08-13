@@ -1,6 +1,6 @@
 <template>
   <v-navigation-drawer
-    color="indigo-darken-4"
+    color="grey-darken-4"
     theme="dark"
     permanent
     :rail="!$vuetify.display.mdAndUp"
@@ -47,4 +47,5 @@ const props = defineProps({
     required: true,
   },
 });
+
 </script>

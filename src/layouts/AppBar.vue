@@ -1,6 +1,6 @@
 <template>
-  <v-app-bar flat>
-    <!-- <v-app-bar-nav-icon @click="props.toggleDrawer" /> -->
+  <v-app-bar flat color="grey-darken-4">
+    <!-- <v-app-bar-nav-icon v-show="$vuetify.display.smAndDown" theme="dark" @click="props.toggleDrawer" /> -->
     <v-toolbar-title>{{ $t("system.title") }}</v-toolbar-title>
     <v-spacer />
     <LanguageSelector />
