@@ -33,7 +33,7 @@
     </v-list>
     <template v-slot:append>
       <div class="pa-2">
-        <v-btn color="red-darken-4" block>
+        <v-btn variant="flat" color="red-darken-4" block>
           <v-icon>mdi-logout</v-icon>
         </v-btn>
       </div>
