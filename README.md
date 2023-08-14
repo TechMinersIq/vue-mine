@@ -6,12 +6,12 @@ VUE MINE is a simple vue project template.
 
 ## Tech Stack
 
-* node v18.13.0
-* vue v3.2.47
-* vuetify v3.0.0-beta.0
-* pinia v2.0.32
-* axios v1.3.4
-* vue-router v4.1.6
+* node v18.16.1
+* vue v3.3.4
+* vuetify v3.3.12
+* pinia v2.1.6
+* axios v1.4.0
+* vue-router v4.2.4
 * vue-i18n v9.2.2
 
 
@@ -31,6 +31,26 @@ VUE MINE is a simple vue project template.
 
 ```bash
   npm run build
+```
+
+## Electron
+
+```bash
+  npm run electron:start
+```
+
+## Package Electron
+
+```bash
+  npm run package-win
+```
+
+```bash
+  npm run package-linux
+```
+
+```bash
+  npm run package-mac
 ```
 
 
